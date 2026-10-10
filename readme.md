@@ -4,6 +4,9 @@
   <img src="https://img.shields.io/badge/PROJECT-IN%20DEVELOPMENT-737373?style=for-the-badge" alt="Project status: In development" />
   <img src="https://img.shields.io/badge/PLATFORM-ROBLOX-333333?style=for-the-badge&logo=roblox&logoColor=white" alt="Platform: Roblox" />
   <img src="https://img.shields.io/badge/TYPE-CUSTOM%20SERVER-555555?style=for-the-badge" alt="Type: Custom server" />
+  <a href="https://discord.gg/rW6nPAGbNk">
+    <img src="https://img.shields.io/badge/JOIN-OUR%20DISCORD-333333?style=for-the-badge&logo=discord&logoColor=white" alt="Join our Discord server" />
+  </a>
 </p>
 
 <p align="center">
