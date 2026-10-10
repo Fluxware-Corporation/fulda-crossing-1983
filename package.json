@@ -1,0 +1,17 @@
+{
+  "name": "the-fulda-crossing-1983",
+  "version": "1.0.0",
+  "description": "Documentation repository for The Fulda Crossing: 1983",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:markdown": "ts-node scripts/check-markdown.ts",
+    "check:types": "tsc --noEmit",
+    "check:javascript": "node --check scripts/utils.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.14.0"
+  }
+}
