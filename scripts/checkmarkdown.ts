@@ -71,4 +71,49 @@ async function checkFile(filePath: string): Promise<void> {
 
     if (lineText.includes("\t")) {
       errors.push({
-        file: relativePa
+        file: relativePath,
+        line: lineNumber,
+        message: "Tab character found (use spaces instead)",
+      });
+    }
+
+    if (/[ \t]+$/.test(lineText)) {
+      errors.push({
+        file: relativePath,
+        line: lineNumber,
+        message: "Trailing whitespace",
+      });
+    }
+  });
+}
+
+async function main(): Promise<void> {
+  const rootDir = process.cwd();
+  const files = await walk(rootDir);
+
+  if (files.length === 0) {
+    console.log("No .md or .mdx files found.");
+    process.exit(0);
+  }
+
+  for (const file of files) {
+    await checkFile(file);
+  }
+
+  if (errors.length > 0) {
+    console.error(`\nMarkdown check failed with ${errors.length} error(s):\n`);
+    for (const err of errors) {
+      console.error(`  ${err.file}:${err.line} - ${err.message}`);
+    }
+    console.error("");
+    process.exit(1);
+  }
+
+  console.log(`Markdown check passed (${files.length} file(s) scanned).`);
+  process.exit(0);
+}
+
+main().catch((err) => {
+  console.error("Markdown checker crashed:", err);
+  process.exit(1);
+});
