@@ -50,3 +50,11 @@ Drawing inspiration from the geopolitical tensions, military aesthetics, and atm
 Neither side is inherently represented as the favored side of the project. Both are part of the setting, and their respective roles are determined by the project's fictional narrative and gameplay.
 
 > **Disclaimer:** The Fulda Crossing: 1983 is a fictional project and is not intended to depict actual historical events. Any similarities to real-world individuals, organizations, locations, or events are coincidental or incorporated within a fictional context.
+
+---
+
+## ◈・Usage Restrictions
+
+Modification, redistribution, or republication of this project's materials, whether in original or modified form, is prohibited without prior written authorization from the project owner. No individual may claim this project or its materials as their own. Access to this repository does not grant permission to modify or redistribute its contents.
+
+---
